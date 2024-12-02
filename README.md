@@ -1,6 +1,10 @@
 
 # Getting Started on the sample app
 
+## Documentation
+
+The documentation for Fairmatic's React Native SDK can be found [here](https://docs.fairmatic.com/integrate-the-fairmatic-react-native-sdk).
+
 ## iOS
 
 1. Run `yarn install`
