@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.fairmatic.sdk.bgrefreshtask</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -31,8 +35,10 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bluetooth access</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Bluetooth access</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Fairmatic requires ‘Always Allow’ location permissions for trip recording to work properly.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
