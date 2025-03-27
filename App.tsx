@@ -52,8 +52,11 @@ export default function App() {
       iconResourceName: 'fm_car',
     };
 
+    // Replace with your SDK key
+    const sdk_key = 'your_sdk_key_here';
+
     const fairmaticConfiguration: FairmaticConfiguration = {
-      sdkKey: '',
+      sdkKey: sdk_key,
       driverId: 'driverId',
       driverAttributes: driverAttributes,
       notification: fairmaticNotification,
