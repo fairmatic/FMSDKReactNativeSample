@@ -21,15 +21,22 @@ export default function App() {
   };
 
   const handleGetFairmaticSettings = (): void => {
-    FairmaticSDK.getFairmaticSettings().then((settings) => {
-      console.log('Fairmatic Settings : ', settings);
-
-      // Print each setting value in the array
-      settings.forEach((settingsError) => {
-        console.log('Setting: ', settingsError
-        );
-    });
-  });
+    FairmaticSDK.getFairmaticSettings()
+      .then((settings) => {
+        console.log('Fairmatic Settings:', settings);    
+        if (settings && settings.length > 0) {
+          console.log('Detected Fairmatic Setting Errors:');
+          settings.forEach((settingError) => {
+            console.log(`- Error: ${settingError}`);
+          });
+        } else {
+          console.log('No Fairmatic setting errors detected');
+        }
+      })
+      .catch((error) => {
+        console.error('Failed to get Fairmatic settings:', error);
+      });
+  };
 
   const handleWipeOut = (): void => {
     console.log('Wiping out Fairmatic SDK');
