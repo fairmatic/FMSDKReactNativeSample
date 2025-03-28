@@ -1,12 +1,12 @@
 # Integrate the Fairmatic React Native SDK
 
-## Package Installation and project setup
+## Package Installation and Project Setup
 
 ```shell
 npm install react-native-fairmatic-sdk@3.0.0 --save
 ```
 
-if you use `yarn`
+If you use `yarn`
 
 ```shell
 yarn add react-native-fairmatic-sdk@3.0.0
@@ -14,9 +14,10 @@ yarn add react-native-fairmatic-sdk@3.0.0
 
 <details>
 
-<summary>iOS-specific installation steps</summary>
 
-## iOS-specific installation steps
+<summary>Additional  iOS-specific installation steps</summary>
+
+## Additional iOS-specific installation steps
 
 ### Podfile changes
 
@@ -33,8 +34,9 @@ target 'YourApp' do
 ```
 and run `cd ios & pod install`
 
-> [!WARNING]
-> Fairmatic React Native Library needs `use_frameworks!` which in turn will not work with Flipper. More on this can be read [here](https://github.com/facebook/flipper/issues/2414).
+> **WARNING**
+>
+> Fairmatic React Native Library needs `use_frameworks!`, which will not work with Flipper. More on this can be read [here](https://github.com/facebook/flipper/issues/2414).
 
 ### Adjusting project settings
 
@@ -63,13 +65,14 @@ This also reduces the amount of battery we use.</string>
 <string>Bluetooth</string>
 ```
 
-> [!NOTE] 
+> **NOTE**
+>  
 > Even though we won't actually use Bluetooth features, Apple requires this message whenever Bluetooth code is present in an app. This is just a technical requirement.
 
 
 #### Background task ID
 
-For the Fairmatic SDK to be more accurate in uploading all trip data, it needs to have [background fetch capability](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app) and a background task id declared in your Info.plist file. You must add the following line in `Info.plist` file:
+For the Fairmatic SDK to be more accurate in uploading all trip data, it needs to have [background fetch capability](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app) and a background task ID declared in your Info.plist file. You must add the following line in the `Info.plist` file:
 
 ```xml
 <key>BGTaskSchedulerPermittedIdentifiers</key>
@@ -171,7 +174,7 @@ FairmaticSDK.startDriveWithPeriod3(trackingId)
 ```
 
 ### Stopping the insurance period
-Stop the insurance period when the driver ends the work day. Call stop period when the driver is no longer looking for a request.
+Stop the insurance period when the driver ends the workday. Call the stop period when the driver is no longer looking for a request.
 
 ```typescript
 FairmaticSDK.stopPeriod()
