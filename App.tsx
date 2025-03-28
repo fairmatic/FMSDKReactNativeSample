@@ -22,9 +22,14 @@ export default function App() {
 
   const handleGetFairmaticSettings = (): void => {
     FairmaticSDK.getFairmaticSettings().then((settings) => {
-      console.log('Settings : ', settings);
+      console.log('Fairmatic Settings : ', settings);
+
+      // Print each setting value in the array
+      settings.forEach((settingsError) => {
+        console.log('Setting: ', settingsError
+        );
     });
-  };
+  });
 
   const handleWipeOut = (): void => {
     console.log('Wiping out Fairmatic SDK');
