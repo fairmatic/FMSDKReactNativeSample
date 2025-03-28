@@ -3,7 +3,7 @@
 
 ## Documentation
 
-The documentation for Fairmatic's React Native SDK can be found [here](https://docs.fairmatic.com/integrate-the-fairmatic-react-native-sdk).
+A quick guide to use the Fairmatic's React Native SDK can be found [here](/integrate_fmsdk_react_native.md).
 
 ## iOS
 
@@ -14,4 +14,4 @@ The documentation for Fairmatic's React Native SDK can be found [here](https://d
 
 ## Android
 
-1. Run `yarn install`
+
