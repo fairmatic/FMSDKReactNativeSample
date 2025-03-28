@@ -83,6 +83,34 @@ For the Fairmatic SDK to be more accurate in uploading all trip data, it needs t
 
 </details>
 
+<details>
+
+<summary>Additional android-specific steps</summary>
+
+## Update minSdk
+Update your minSdk to `26`. Based on your project setup, it could either be found under `buildScript -> ext` 
+block or directly under `android -> defaultConfig` block in your `build.gradle` file
+
+## Add DriveQuant maven repository
+```
+repositories {
+    maven {
+        url "https://maven.drivequant.com/repository/android-sdk/"
+    }
+}
+```
+
+## Set allowBackup to `true` (troubleshooting)
+If you face the following error while building the android app, either remove `android:allowBackup` key from the `AndroidManifest.xml` or replace it as described in the error message
+```
+Error:
+	Attribute application@allowBackup value=(false) from AndroidManifest.xml:8:7-34
+	is also present at [com.fairmatic:sdk:3.0.0] AndroidManifest.xml:13:9-35 value=(true).
+	Suggestion: add 'tools:replace="android:allowBackup"' to <application> element at AndroidManifest.xml to override.
+```
+
+</details>
+
 ## Setup the Fairmatic SDK in code
 
 The following code snippet shows how to initialize the SDK. You will need the SDK key and the driver details.
