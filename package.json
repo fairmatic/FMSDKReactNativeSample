@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "18.3.1",
     "react-native": "0.75.4",
-    "react-native-fairmatic-sdk": "^1.0.0"
+    "react-native-fairmatic-sdk": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
