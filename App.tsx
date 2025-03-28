@@ -77,7 +77,7 @@ export default function App() {
     FairmaticSDK.setup(fairmaticConfiguration)
       .then((result: FairmaticOperationResult) => {
         console.log('response: ', result);
-        if (result.isSuccess) console.log('Setup Succesful');
+        if (result.isSuccess) console.log('Setup Successful');
         else console.log('Setup Failed because of ', result.errorMessage);
       })
       .catch((error: any) => {
