@@ -3,13 +3,13 @@
 ## Package Installation and Project Setup
 
 ```shell
-npm install react-native-fairmatic-sdk@3.0.0 --save
+npm install react-native-fairmatic-sdk@3.0.2 --save
 ```
 
 If you use `yarn`
 
 ```shell
-yarn add react-native-fairmatic-sdk@3.0.0
+yarn add react-native-fairmatic-sdk@3.0.2
 ```
 
 <details>
@@ -105,7 +105,7 @@ If you face the following error while building the android app, either remove `a
 ```
 Error:
 	Attribute application@allowBackup value=(false) from AndroidManifest.xml:8:7-34
-	is also present at [com.fairmatic:sdk:3.0.0] AndroidManifest.xml:13:9-35 value=(true).
+	is also present at [com.fairmatic:sdk:3.0.2] AndroidManifest.xml:13:9-35 value=(true).
 	Suggestion: add 'tools:replace="android:allowBackup"' to <application> element at AndroidManifest.xml to override.
 ```
 
