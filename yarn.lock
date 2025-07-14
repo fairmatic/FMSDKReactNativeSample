@@ -5481,10 +5481,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-fairmatic-sdk@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-fairmatic-sdk/-/react-native-fairmatic-sdk-3.0.2.tgz#96d7c2ebaf45a489148c341f5b0368ea8686a57c"
-  integrity sha512-wUAQaSVOTNdk4ysodHMxNleuERnAAnlxmslHZ23PVIQ8jy09QDVCJHiWb2U6YiS7hbpI5Jea1nrc9QHhVHOAEw==
+react-native-fairmatic-sdk@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-fairmatic-sdk/-/react-native-fairmatic-sdk-3.0.3.tgz#f9e67c33084be1e86593a4c4f883c1d1527da547"
+  integrity sha512-u6jr0elbOgysn1FuqEGJzxXRdVigjfe6tvVUJzoGgw8ZwnDLxYC/d8UmHlywqqgoeI6XFLheOfUyC9bme4LIqQ==
 
 react-native@0.75.4:
   version "0.75.4"
