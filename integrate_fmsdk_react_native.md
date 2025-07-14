@@ -3,13 +3,13 @@
 ## Package Installation and Project Setup
 
 ```shell
-npm install react-native-fairmatic-sdk@3.0.2 --save
+npm install react-native-fairmatic-sdk@3.0.3 --save
 ```
 
 If you use `yarn`
 
 ```shell
-yarn add react-native-fairmatic-sdk@3.0.2
+yarn add react-native-fairmatic-sdk@3.0.3
 ```
 
 <details>
@@ -29,7 +29,7 @@ target 'YourApp' do
   # your pods go here
   ......
   # Add Fairmatic iOS Pod dependency
-  pod 'FairmaticSDK', :git => 'https://github.com/fairmatic/fairmatic-cocoapods', :tag => '3.0.0'
+  pod 'FairmaticSDK', :git => 'https://github.com/fairmatic/fairmatic-cocoapods', :tag => '3.0.1'
   pod 'react-native-fairmatic-sdk', :path => '../node_modules/react-native-fairmatic-sdk'
 ```
 and run `cd ios & pod install`
